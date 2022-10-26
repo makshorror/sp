@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+.header {
+  margin: 0 auto;
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  height: 80px;
+  background-color: black;
+}
+
+.header .navContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header .navContainer .navWrapper {
+  height: 80px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .navContainer .navWrapper .logos .logo {
+  width: 150px;
+}
+
+.header .navContainer .navWrapper .nav .navItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 80px;
+}
+
+.header .navContainer .navWrapper .nav .navItems .navItem {
+  list-style-type: none;
+}
+
+.header .navContainer .navWrapper .nav .navItems .navItem button {
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+.header .navContainer .navWrapper .nav .navItems .navItem #main {
+  color: #F4BE16;
+}
+
+.header .navContainer .navWrapper .nav .navItems .navItem #main:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #F4BE16;
+  content: "";
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+.header .navContainer .navWrapper .nav .navItems .navItem button:hover {
+  color: #F4BE16;
+}
+
+.header .navContainer .navWrapper .nav .navItems .navItem button:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #F4BE16;
+  content: "";
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+.header .navContainer .navWrapper .nav .navItems .navItem button:hover:after,
+.header .navContainer .navWrapper .nav .navItems .navItem button:focus:after {
+  width: 100%;
+}
+
+.header .navContainer .navWrapper .basketWrapper {
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+.header .navContainer .navWrapper .basketWrapper .basket {
+  width: 25px;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+.header .navContainer .navWrapper .basketWrapper .basketCount {
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  color: #000;
+  bottom: 0;
+  right: -5px;
+  text-align: center;
+  font-size: 13px;
+  border-radius: 50%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.header .navContainer .navWrapper .basketWrapper:hover {
+  opacity: 60%;
+}
+
+.main {
+  position: relative;
+  background-image: url("../assets/img/mainBg.jpg");
+  background-size: cover;
+}
+
+.main .container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 200px;
+}
+
+.main .container .ava {
+  max-width: 300px;
+  border: 2px solid #fff;
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+
+.main .container .svetlana {
+  color: #fff;
+  margin-top: 40px;
+  font-size: 60px;
+}
+
+.main .container .hr {
+  margin-top: 20px;
+  content: "";
+  width: 10%;
+  background-color: #fff;
+  height: 2px;
+  opacity: 80%;
+}
+
+.main .container .description {
+  margin-top: 20px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 35px;
+  opacity: 80%;
+}
+
+.main .container .arrow {
+  cursor: pointer;
+  margin: 100px 0 23px;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  max-width: 70px;
+  -webkit-animation: arrow 1s infinite;
+          animation: arrow 1s infinite;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+.main .container .arrow:hover {
+  opacity: 60%;
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-15%);
+            transform: translateY(-15%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes arrow {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-15%);
+            transform: translateY(-15%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+/*# sourceMappingURL=App.css.map */
